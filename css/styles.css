@@ -1,6 +1,6 @@
 @font-face {
   font-family: Japonese;
-  src: url(fonts/Japanese.ttf);
+  src:url(fonts/Japanese.ttf);
 }
 
 @font-face {
@@ -10,8 +10,9 @@
 
 @font-face {
   font-family: Midorima;
-  src: url(fonts/Midorima.ttf);
+  src:url(/css/fonts/Midorima.ttf);
 }
+
 body {
   background-image: linear-gradient(to right, #a5aeb4 0%, #a0a7ac 100%);
 }
