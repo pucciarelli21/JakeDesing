@@ -1,11 +1,11 @@
 @font-face {
   font-family: Japonese;
-  src:url(fonts/Japanese.ttf);
+  src:url(../fonts/Japanese.ttf);
 }
 
 @font-face {
   font-family: go3v2;
-  src: url(fonts/go3v2.ttf);
+  src: url(../fonts/go3v2.ttf);
 }
 
 @font-face {
