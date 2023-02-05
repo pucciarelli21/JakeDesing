@@ -5,6 +5,77 @@
     padding: 0;
   }
 
+  #perfil-pages {
+    width: 10%;
+    padding: 0;
+  }
+
+  .iniciarSesion {
+    width: 100%;
+    margin-left: 3%;
+  }
+
+  .dropdown-menu {
+    background-image: linear-gradient(to right, #ff0022c0 0%, #ff0800bd 100%);
+    border: 2px solid black;
+  }
+
+  .dropdown-menu li a {
+    font-family: go3v2;
+    font-size: 120%;
+    font-weight: 600;
+    color: rgb(24, 23, 23);
+  }
+
+  .dropdown-menu :hover {
+    background-image: linear-gradient(to right, #43191fb1 0%, #2e0909bb 100%);
+  }
+
+  .iniciarSesion {
+    color: #000000;
+    font-family: go3v2;
+    font-weight: 600;
+  }
+
+  /*Inicio de sesion y registro modals*/
+
+  .modal-content {
+
+    border-radius: 4%;
+
+    background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+
+    -webkit-box-shadow: inset 0px 0px 117px -23px rgba(71, 71, 71, 1);
+    -moz-box-shadow: inset 0px 0px 117px -23px rgba(71, 71, 71, 1);
+    box-shadow: inset 0px 0px 117px -23px rgba(71, 71, 71, 1);
+  }
+
+  .btn-close {
+    margin: 3%;
+    padding: 0;
+  }
+
+  .modal-content img {
+    width: 16%;
+    opacity: 85%;
+    filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
+  }
+
+  .modalTitle h1 {
+    color: #220707;
+    padding-top: 4%;
+
+    font-weight: 700;
+    font-family: go3v2;
+
+    filter: drop-shadow(0px 0px 7px rgb(255, 255, 255));
+  }
+
+  .modalFooter {
+    text-align: center;
+    margin: 3%;
+  }
+
   /*Presentacion*/
 
   .presentacion h1 {
@@ -12,23 +83,23 @@
     font-family: Midorima;
     font-size: 310%;
     padding-top: 3%;
-    filter: drop-shadow(0px 0px 40px rgb(255, 34, 34));
   }
 
   /*Packs*/
 
   .sectionPacks {
+    align-items: center;
     padding-bottom: 5%;
 
-    border-top:5px solid black;
-    border-bottom:5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
   }
 
   .packsTitle h1 {
     font-family: Midorima;
     color: #e2ebf0;
     filter: drop-shadow(2px 2px 3px black);
-    padding-top:5%;
+    padding-top: 5%;
   }
 
   .packsTitle h3 {
@@ -38,45 +109,42 @@
     padding-bottom: 3%;
   }
 
-  .imgPackContainer {
-    display: flex;
+  .carruselPacks {
+    width: 60%;
+  }
+
+  .carousel-inner {
+    filter: drop-shadow(2px 3px 5px black);
+  }
+
+  .carousel-caption h5 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .carousel-caption p {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 900;
   }
 
   .imgPacks1 {
-    width: 80%;
     border-radius: 3%;
-
-    margin: 3%;
-
     opacity: 90%;
-
-    -webkit-box-shadow: 2px 8px 15px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 8px 15px -1px rgba(0, 0, 0, 0.75);
-    box-shadow: 2px 8px 15px -1px rgba(0, 0, 0, 0.75);
   }
 
   .imgPacks2 {
-    width: 62%;
+    width: 76%;
+    height: 100%;
     border-radius: 3%;
     opacity: 90%;
-
-    margin: 3%;
-
-    -webkit-box-shadow: 2px 8px 15px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 8px 15px -1px rgba(0, 0, 0, 0.75);
-    box-shadow: 2px 8px 15px -1px rgba(0, 0, 0, 0.75);
   }
 
   .imgPacks3 {
-    width: 70%;
+    width: 90%;
     border-radius: 3%;
     opacity: 90%;
-
-    margin: 3%;
-
-    -webkit-box-shadow: 2px 8px 15px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 8px 15px -1px rgba(0, 0, 0, 0.75);
-    box-shadow: 2px 8px 15px -1px rgba(0, 0, 0, 0.75);
   }
 
   /*Cars - info sobre nosotros*/
@@ -87,7 +155,6 @@
 
   .conoceTitulo h1 {
     font-family: Midorima;
-    filter: drop-shadow(0px 0px 40px red);
     font-size: 350%;
   }
 
@@ -97,23 +164,21 @@
   }
 
   .card {
-    background-image: linear-gradient(
-      to top,
-      #f00e0e 0%,
-      #ec1c1c 50%,
-      #ec1c1c 50%,
-      hsl(0, 100%, 50%) 100%
-    );
+    background-image: linear-gradient(to top,
+        #f00e0e 0%,
+        #ec1c1c 50%,
+        #ec1c1c 50%,
+        hsl(0, 100%, 50%) 100%);
     align-items: center;
     border-radius: 6%;
-    border: 2px rgb(185, 167, 167) solid;
+    border: 2px rgb(54, 40, 40) solid;
 
     opacity: 80%;
     margin: 2%;
 
-    -webkit-box-shadow: 10px 10px 15px -7px rgba(61, 54, 54, 0.75);
-    -moz-box-shadow: 10px 10px 15px -7px rgba(109, 93, 93, 0.75);
-    box-shadow: 10px 10px 15px -7px rgba(61, 53, 53, 0.75);
+    -webkit-box-shadow: 10px 13px 15px -7px rgba(61, 54, 54, 0.75);
+    -moz-box-shadow: 10px 13px 15px -7px rgba(109, 93, 93, 0.75);
+    box-shadow: 10px 13px 15px -7px rgba(61, 53, 53, 0.75);
   }
 
   .imgConoce {
@@ -152,43 +217,44 @@
     filter: drop-shadow(3px 3px 4px rgb(121, 98, 98));
   }
 
-   /*Footer*/
+  /*Footer*/
 
-   .descriFooter h5{
+  .descriFooter h5 {
     color: rgb(244, 230, 230);
     font-size: 120%;
     font-weight: 600;
     text-align: left;
   }
-  .descriFooter h3{
+
+  .descriFooter h3 {
     color: rgb(249, 234, 234);
     font-size: 140%;
     font-weight: 900;
     text-align: left;
   }
-  
-  footer .container{
+
+  footer .container {
     text-align: center;
   }
-  
-  .iconsFooter{
+
+  .iconsFooter {
     justify-content: center;
     margin: 0%;
   }
-  
-  .iconsFooter a{
+
+  .iconsFooter a {
     margin: 1%;
   }
-  
-  .iconsFooter a img{
+
+  .iconsFooter a img {
     width: 3%;
     margin-top: 2%;
     margin-bottom: 2%;
   }
-  
-  .conactoFooterContainer{
+
+  .conactoFooterContainer {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     padding-left: 18%;
   }
 
@@ -200,24 +266,25 @@
     font-family: Midorima;
   }
 
-  .conactoFooter{
+  .conactoFooter {
     display: flex;
   }
 
-  .conactoFooter h3{
+  .conactoFooter h3 {
     font-size: 100%;
     font-family: Midorima;
     font-weight: 400;
     color: #e2ebf0;
   }
 
-  .conactoFooter h4{
+  .conactoFooter h4 {
     font-size: 110%;
+    font-weight: 700;
     padding-top: 3%;
     color: #e2ebf0;
   }
 
-  .conactoFooter img{
+  .conactoFooter img {
     width: 10%;
     margin: 1%;
   }
@@ -226,6 +293,10 @@
 @media (max-width: 767.98px) {
   .imgLogo {
     margin-top: 3%;
+  }
+
+  .dropdown-menu li a {
+    padding-left: 15%;
   }
 
   /*NavNar*/
@@ -238,7 +309,7 @@
     top: 4%;
     left: 5%;
     border: 2px solid #000000;
-    background-image: linear-gradient(to right, #e41c38 0%, #ff0800 100%);
+    background-image: linear-gradient(to right, #e41c38 0%, #cb322d 100%);
   }
 
   #offcanvasExample {
@@ -259,6 +330,10 @@
     position: sticky;
     left: 87%;
     bottom: 2%;
+  }
+
+  .iniciarSesion {
+    color: #e2ebf0;
   }
 
   /*Presentacion*/
@@ -286,11 +361,6 @@
     padding-bottom: 4%;
   }
 
-  .imgPackContainer {
-    display: inline;
-    text-align: center;
-  }
-
   .imgPacks1 {
     width: 75%;
   }
@@ -299,7 +369,7 @@
     width: 75%;
   }
 
-  .imgPacks3{
+  .imgPacks3 {
     width: 74%;
   }
 
@@ -327,7 +397,7 @@
     margin: 10% 0% 10% 0%;
   }
 
-  .imgConoce{
+  .imgConoce {
     margin-top: 5%;
   }
 
@@ -352,44 +422,45 @@
 
   /*Footer*/
 
-  .descriFooter h5{
+  .descriFooter h5 {
     color: rgb(244, 230, 230);
     font-size: 70%;
     font-weight: 600;
     text-align: left;
   }
-  .descriFooter h3{
+
+  .descriFooter h3 {
     color: rgb(249, 234, 234);
-    font-size:70%;
+    font-size: 70%;
     font-weight: 900;
     text-align: left;
   }
-  
-  footer .container{
+
+  footer .container {
     text-align: center;
   }
-  
-  footer div img{
+
+  footer div img {
     width: 14%;
     opacity: 80%;
     filter: drop-shadow(1px 1px 4px black);
   }
-  
-  .iconsFooter{
+
+  .iconsFooter {
     justify-content: center;
   }
-  
-  .iconsFooter a{
+
+  .iconsFooter a {
     margin: 1%;
   }
-  
-  .iconsFooter a img{
+
+  .iconsFooter a img {
     width: 7%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
-  
-  .conactoFooterContainer{
+
+  .conactoFooterContainer {
     display: flex;
     padding: 0%;
   }
@@ -400,32 +471,31 @@
     font-size: 100%;
   }
 
-  .conactoFooter{
+  .conactoFooter {
     display: flex;
     justify-content: center;
   }
 
-  .conactoFooter h3{
+  .conactoFooter h3 {
     text-align: left;
-    
+
     font-size: 100%;
     font-family: Midorima;
     font-weight: 400;
     color: #e2ebf0;
   }
 
-  .conactoFooter h4{
+  .conactoFooter h4 {
     font-size: 70%;
     padding-top: 3%;
     padding-left: 3%;
     color: #e2ebf0;
   }
 
-  .conactoFooter img{
+  .conactoFooter img {
     width: 10%;
     margin: 1%;
   }
-
 }
 
 /*Encabezado*/
@@ -475,7 +545,7 @@
 .sectionType2 {
   padding-top: 5%;
   padding-bottom: 5%;
-  background-image: linear-gradient(to right, #e6e9f0 0%, #eef1f5 100%);
+  background-image: linear-gradient(to right, #fffef7 0%, #fffffa 100%);
   fill-opacity: 30%;
 
   -webkit-box-shadow: inset 0px 0px 122px -83px rgba(0, 0, 0, 0.75);

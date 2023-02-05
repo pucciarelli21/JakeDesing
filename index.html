@@ -26,8 +26,9 @@
         </div>
 
         <nav class="navbar navbar-expand-md mt-3">
-            <button class="nav_icon navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="nav_icon navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -40,9 +41,7 @@
                     <li class="nav-item">
                         <a class="nav-link navPages" aria-current="page" href="index.html"><strong>Home</strong></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link navPages" aria-current="page" href="#"><strong>Servicios</strong></a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link navPages" aria-current="page" href="#"><strong>Tienda</strong></a>
                     </li>
@@ -58,21 +57,7 @@
                             <li><a class="dropdown-item" href="">Web ESport</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navPages" role="button" data-bs-toggle="dropdown"
-                            href=""><strong>Portafolio</strong></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="">Emotes</a></li>
-                            <li><a class="dropdown-item" href="">Logos</a></li>
-                            <li><a class="dropdown-item" href="">Mockups</a></li>
-                            <li><a class="dropdown-item" href="">Diseños 3D</a></li>
-                            <li><a class="dropdown-item" href="">Diseño web</a></li>
-                            <li><a class="dropdown-item" href="">Ilustraccion</a></li>
-                            <li><a class="dropdown-item" href="">Mascot Logos</a></li>
-                            <li><a class="dropdown-item" href="">Animaciones</a></li>
-                            <li><a class="dropdown-item" href="">Patterns</a></li>
-                        </ul>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link navPages" aria-current="page" href="#"><strong>Streamers</strong></a>
                     </li>
@@ -89,10 +74,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navPages" aria-current="page" href="#"><strong>Packs GFX</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navPages" aria-current="page" href="#"><strong>Branding</strong></a>
+                        <a class="nav-link navPages" aria-current="page" href="#"><strong>Servicios</strong></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navPages" aria-current="page" href="#"><strong>Contacto</strong></a>
@@ -100,10 +82,102 @@
                     <li class="nav-item">
                         <a class="nav-link navPages" aria-current="page" href="#"><strong>Acerca de</strong></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link navPages iniciarSesion" data-bs-toggle="modal" data-bs-target="#inicio"> Iniciar sesion</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </div>
+
+ <!-- Modal inicio sesion -->
+ <div class="modal fade" id="inicio" tabindex="-1" aria-labelledby="inicioSesion" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="text-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="text-center">
+            <img class="" src="images/JakeStudioKitsuneMax.png" alt="">
+        </div>
+        <div class="modalTitle">
+          <h1 class="modal-title text-center m-1 fs-5" id="inicioSesion">Inicio de sesion</h1>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="container">
+              <div class="text-center">
+                <label class="text-start form-label" for="email">Email 
+                  <input class="form-control" type="text" id="email">
+                </label>
+              </div>
+              <div class="text-center">
+                <label class="text-start form-label" for="password">Contraseña 
+                  <input class="form-control" type="text" id="password">
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modalFooter">
+          <a class="backModal" data-bs-toggle="modal" data-bs-target="#register">No tengo cuenta</a>
+          <button type="button" class="btn btn-primary">Iniciar sesion</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal registro -->
+  <div class="modal fade" id="register" tabindex="-1" aria-labelledby="registro" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="registro">Inicio de sesion</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="container">
+              <div class="row">
+                <div class="col text-center">
+                  <label class="text-start form-label" for="nombre">Nombre 
+                    <input class="form-control" type="text" id="nombre">
+                  </label>
+                </div>
+                <div class="col text-center">
+                  <label class="text-start form-label" for="apellido">Apellido 
+                    <input class="form-control" type="text" id="apellido">
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex">
+                <label class="text-start form-label" style="width: 100%;" for="emailReg">Email 
+                  <input class="form-control" type="text" id="emailReg">
+                </label>
+              </div>
+              <div class="row">
+                <div class="col text-center">
+                  <label class="text-start form-label" for="passwordReg">Contraseña 
+                    <input class="form-control" type="text" id="passwordReg">
+                  </label>
+                </div>
+                <div class="col text-center">
+                  <label class="text-start form-label" for="repitPassword">Repetir contraseña 
+                    <input class="form-control" type="text" id="repitPassword">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a class="backModal" data-bs-toggle="modal" data-bs-target="#inicio">Volver</a>
+          <button type="button" class="btn btn-primary">Iniciar sesion</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <section class="sectionType2">
         <div class="container text-center presentacion">
             <h1>DISEÑOS EXLUSIVOS, DISEÑOS 3D, ILUSTRACCIONES,</h1>
@@ -117,19 +191,60 @@
                     <h1>PACKS DE DISEÑOS</h1>
                     <h3>Conoce nuestros nuevos packs de diseños y ofertas para ti.</h3>
                 </div>
-                <div class="container text-center">
-                    <div class="imgPackContainer">
-                        <div class="col">
-                            <img class="imgPacks1" src="images/MascotMerch.jpg" alt="">
-                            <img class="imgPacks1" src="images/Emotes1.jpg" alt="">
+                <div class="container carruselPacks">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
                         </div>
-                        <div class="col">
-                            <img class="imgPacks2" src="images/Paneles1-min.jpg" alt="">
-                            <img class="imgPacks3" src="images/WEB1-min.jpg" alt="">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/MascotMerch.jpg" class="d-block w-100 imgPacks1" alt="">
+                                <div class="carousel-caption">
+                                    <h5>Packs Merch</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Emotes1.jpg" class="d-block w-100 imgPacks1" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Packs de emotes</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Paneles1-min.jpg" class="d-block img-fluid imgPacks2" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Pack paneles</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/WEB1-min.jpg" class="d-block img-fluid imgPacks3" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Pack web</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -207,7 +322,7 @@
                 <div class="col descriFooter">
                     <h5>En JB Designs nos enfocamos al desarrollo y posicionamiento de marcas dando una línea grafica y
                         la mejor elaboración de la personalización de su marca e imagen</h5>
-               
+
                     <h5>Al igual que nos enfocamos al desarrollo de elementos y diseños para cradores de contenido y
                         personalización oficial y personal de equipos Esports al rededor del mundo.</h5>
                 </div>
@@ -230,14 +345,18 @@
             </div>
 
             <div class="iconsFooter">
-                <a href="https://www.facebook.com/JakeBy96" target="_blank"><img src="images/facebook_logo.png" alt=""></a>
+                <a href="https://www.facebook.com/JakeBy96" target="_blank"><img src="images/facebook_logo.png"
+                        alt=""></a>
                 <a href="https://twitter.com/JakeBy96x2" target="_blank"><img src="images/Twitter_logo.png" alt=""></a>
-                <a href="https://www.instagram.com/jakeby.designs/" target="_blank"><img src="images/instagram_logo.png" alt=""></a>
-                <a href="https://www.behance.net/JakeByDesigns" target="_blank"><img src="images/behance_logo.png" alt=""></a>
+                <a href="https://www.instagram.com/jakeby.designs/" target="_blank"><img src="images/instagram_logo.png"
+                        alt=""></a>
+                <a href="https://www.behance.net/JakeByDesigns" target="_blank"><img src="images/behance_logo.png"
+                        alt=""></a>
             </div>
         </div>
     </footer>
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/main.js"></script>
+
 </html>
