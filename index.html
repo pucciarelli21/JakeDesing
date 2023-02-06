@@ -83,107 +83,110 @@
                         <a class="nav-link navPages" aria-current="page" href="#"><strong>Acerca de</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navPages iniciarSesion" data-bs-toggle="modal" data-bs-target="#inicio"> Iniciar sesion</a>
+                        <a class="nav-link navPages iniciarSesion" data-bs-toggle="modal" data-bs-target="#inicio">
+                            Iniciar sesion</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
 
- <!-- Modal inicio sesion -->
- <div class="modal fade" id="inicio" tabindex="-1" aria-labelledby="inicioSesion" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="text-end">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="text-center">
-            <img class="" src="images/JakeStudioKitsuneMax.png" alt="">
-        </div>
-        <div class="modalTitle">
-          <h1 class="modal-title text-center m-1 fs-5" id="inicioSesion">Inicio de sesion</h1>
-        </div>
-        <div class="modal-body">
-          <form action="">
-            <div class="container">
-              <div class="text-center">
-                <label class="text-start form-label" for="email">Email 
-                  <input class="form-control" type="text" id="email">
-                </label>
-              </div>
-              <div class="text-center">
-                <label class="text-start form-label" for="password">Contraseña 
-                  <input class="form-control" type="text" id="password">
-                </label>
-              </div>
+    <!-- Modal inicio sesion -->
+    <div class="modal fade" id="inicio" tabindex="-1" aria-labelledby="inicioSesion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="text-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="text-center">
+                    <img class="" src="images/JakeStudioKitsuneMax.png" alt="">
+                </div>
+                <div class="modalTitle">
+                    <h1 class="modal-title text-center m-1 fs-5" id="inicioSesion">Inicio de sesion</h1>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="container">
+                            <div class="camposForm text-center">
+                                <label class="text-start form-label" for="email">Email
+                                    <input class="form-control" type="text" id="email">
+                                </label>
+                            </div>
+                            <div class="camposForm text-center">
+                                <label class="text-start form-label" for="password">Contraseña
+                                    <input class="form-control" type="password" id="password">
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modalFooter">
+                    <a class="backModal" type="button" data-bs-toggle="modal" data-bs-target="#register">No tengo cuenta</a>
+                    <button type="button" class="btn">Iniciar sesion</button>
+                </div>
             </div>
-          </form>
         </div>
-        <div class="modalFooter">
-          <a class="backModal" data-bs-toggle="modal" data-bs-target="#register">No tengo cuenta</a>
-          <button type="button" class="btn btn-primary">Iniciar sesion</button>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- Modal registro -->
-  <div class="modal fade" id="register" tabindex="-1" aria-labelledby="registro" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="registro">Inicio de sesion</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form action="">
-            <div class="container">
-              <div class="row">
-                <div class="col text-center">
-                  <label class="text-start form-label" for="nombre">Nombre 
-                    <input class="form-control" type="text" id="nombre">
-                  </label>
+    <!-- Modal registro -->
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="registro" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="registro">Inicio de sesion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col text-center">
-                  <label class="text-start form-label" for="apellido">Apellido 
-                    <input class="form-control" type="text" id="apellido">
-                  </label>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <label class="text-start form-label" for="nombre">Nombre
+                                        <input class="form-control" type="text" id="nombre">
+                                    </label>
+                                </div>
+                                <div class="col text-center">
+                                    <label class="text-start form-label" for="apellido">Apellido
+                                        <input class="form-control" type="text" id="apellido">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <label class="text-start form-label" style="width: 100%;" for="emailReg">Email
+                                    <input class="form-control" type="text" id="emailReg">
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <label class="text-start form-label" for="passwordReg">Contraseña
+                                        <input class="form-control" type="password" id="passwordReg">
+                                    </label>
+                                </div>
+                                <div class="col text-center">
+                                    <label class="text-start form-label" for="repitPassword">Repetir contraseña
+                                        <input class="form-control" type="password" id="repitPassword">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-              </div>
-              <div class="d-flex">
-                <label class="text-start form-label" style="width: 100%;" for="emailReg">Email 
-                  <input class="form-control" type="text" id="emailReg">
-                </label>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <label class="text-start form-label" for="passwordReg">Contraseña 
-                    <input class="form-control" type="text" id="passwordReg">
-                  </label>
+                <div class="modal-footer">
+                    <a class="backModal" data-bs-toggle="modal" data-bs-target="#inicio">Volver</a>
+                    <button type="button" class="btn btn-primary">Iniciar sesion</button>
                 </div>
-                <div class="col text-center">
-                  <label class="text-start form-label" for="repitPassword">Repetir contraseña 
-                    <input class="form-control" type="text" id="repitPassword">
-                  </label>
-                </div>
-              </div>
             </div>
-          </form>
         </div>
-        <div class="modal-footer">
-          <a class="backModal" data-bs-toggle="modal" data-bs-target="#inicio">Volver</a>
-          <button type="button" class="btn btn-primary">Iniciar sesion</button>
-        </div>
-      </div>
     </div>
-  </div>
 
-    <section class="sectionType2">
-        <div class="container text-center presentacion">
-            <h1>DISEÑOS EXLUSIVOS, DISEÑOS 3D, ILUSTRACCIONES,</h1>
-            <h1>PACKS PARA STREAMERS, EMOTES Y MUCHO MAS...</h1>
-        </div>
-    </section>
+    <div class="container">
+        <section class="sectionType2">
+            <div class="container text-center presentacion">
+                <h1>DISEÑOS EXLUSIVOS, DISEÑOS 3D, ILUSTRACCIONES,</h1>
+                <h1>PACKS PARA STREAMERS, EMOTES Y MUCHO MAS...</h1>
+            </div>
+        </section>
+    </div>
     <section>
         <div class="sectionType1 sectionPacks">
             <div class="container">
@@ -200,7 +203,7 @@
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                                 aria-label="Slide 4"></button>
                         </div>
                         <div class="carousel-inner">
@@ -247,74 +250,72 @@
                 </div>
             </div>
         </div>
-
     </section>
-    <section class="sectionType2">
-        <div class="">
-            <div class="conoceTitulo text-center">
-                <h1>CONOCE MAS SOBRE NOSOTROS</h1>
-                <h4>Nos enfocamos a las necesidades y la satisfacción de cada cliente</h4>
+    <div class="container">
+        <section class="sectionType2">
+            <div >
+                <div class="conoceTitulo text-center">
+                    <h1>CONOCE MAS SOBRE NOSOTROS</h1>
+                    <h4>Nos enfocamos a las necesidades y la satisfacción de cada cliente</h4>
+                </div>
+                <div class="tarjetas">
+                    <div class="card text-center" style="width: 18rem;">
+                        <div class="imgConoce">
+                            <img src="images/icon1.png" class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">IDEAS CREATIVAS</h5>
+                            <p class="card-text">En JB Designs nos enfocamos en la creatividad e inovar el concepto de
+                                tu
+                                diseño a otro nivel.</p>
+                        </div>
+                        <a href="#" class="btn">Leer mas...</a>
+                    </div>
+
+                    <div class="card text-center" style="width: 18rem;">
+                        <div class="imgConoce">
+                            <img src="images/icon2.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">FORMATOS</h5>
+                            <p class="card-text text-justify">Cada diseño es entregado con sus respectivos archivos y
+                                formatos descritos en cada tipo necesidad del cliente.</p>
+                        </div>
+                        <a href="#" class="btn">Leer mas...</a>
+                    </div>
+
+                    <div class="card text-center" style="width: 18rem;">
+                        <div class="imgConoce">
+                            <img src="images/icon3.png" class="card-img-top imgConoce2" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">DESARROLLO</h5>
+                            <p class="card-text text-justify">Desarrollamos y posicionamos marcar creando distintas
+                                lineas
+                                graficas impulsando tu marca.</p>
+                        </div>
+                        <a href="#" class="btn">Leer mas...</a>
+                    </div>
+
+                    <div class="card text-center" style="width: 18rem;">
+                        <div class="imgConoce">
+                            <img src="images/icon4.png" class="card-img-top imgConoce2" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">EFECTIVIDAD</h5>
+                            <p class="card-text text-justify">Buscamos eficiencia para tu audiencia buscando lo mejor
+                                para
+                                la productividad de tu marca..</p>
+                        </div>
+                        <a href="#" class="btn">Leer mas...</a>
+                    </div>
+                </div>
             </div>
-            <div class="tarjetas">
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="imgConoce">
-                        <img src="images/icon1.png" class="card-img-top" alt="...">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">IDEAS CREATIVAS</h5>
-                        <p class="card-text">En JB Designs nos enfocamos en la creatividad e inovar el concepto de tu
-                            diseño a otro nivel.</p>
-                    </div>
-                    <a href="#" class="btn">Leer mas...</a>
-                </div>
-
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="imgConoce">
-                        <img src="images/icon2.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">FORMATOS</h5>
-                        <p class="card-text text-justify">Cada diseño es entregado con sus respectivos archivos y
-                            formatos descritos en cada tipo necesidad del cliente.</p>
-                    </div>
-                    <a href="#" class="btn">Leer mas...</a>
-                </div>
-
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="imgConoce">
-                        <img src="images/icon3.png" class="card-img-top imgConoce2" alt="...">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">DESARROLLO</h5>
-                        <p class="card-text text-justify">Desarrollamos y posicionamos marcar creando distintas lineas
-                            graficas impulsando tu marca.</p>
-                    </div>
-                    <a href="#" class="btn">Leer mas...</a>
-                </div>
-
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="imgConoce">
-                        <img src="images/icon4.png" class="card-img-top imgConoce2" alt="...">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">EFECTIVIDAD</h5>
-                        <p class="card-text text-justify">Buscamos eficiencia para tu audiencia buscando lo mejor para
-                            la productividad de tu marca..</p>
-                    </div>
-                    <a href="#" class="btn">Leer mas...</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="sectionType1">
-        <div class="emotes conttainer text-center">
-
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer>
         <div class="container">

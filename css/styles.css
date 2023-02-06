@@ -14,7 +14,11 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+  background-image: linear-gradient(to top, #ecf1f4 0%, #fefefe 100%);
+
+  -webkit-box-shadow: inset 0px 0px 122px -83px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 122px -83px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 122px -83px rgba(0, 0, 0, 0.75);
 }
 
 /*Boton volver arriba*/
