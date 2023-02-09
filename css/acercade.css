@@ -1,0 +1,27 @@
+@media (max-width: 1400px) {
+
+
+    .sobreJake{
+        margin: 5%;
+    }
+
+    .jakeCartoon{
+        width: 60%;
+        border-radius: 50%;
+    }
+
+    .infoJake h2{
+        font-family: Midorima;
+        font-size: 280%;
+    }
+
+    .infoJake h4{
+        font-family: go3v2;
+        font-size: 140%;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 767.98px) {
+    
+}
