@@ -1,27 +1,154 @@
 @media (max-width: 1400px) {
 
-
-    .sobreJake{
+    .sobreJake {
+        padding-top: 10%;
         margin: 5%;
+        display: flex;
     }
 
-    .jakeCartoon{
-        width: 60%;
+    .jakeCartoon {
+        width: 70%;
         border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
     }
 
-    .infoJake h2{
+    .infoJake h2 {
         font-family: Midorima;
         font-size: 280%;
     }
 
-    .infoJake h4{
+    .infoJake h4 {
         font-family: go3v2;
         font-size: 140%;
         text-align: justify;
     }
+
+    .sectionType1{
+        border-top:4px solid;
+        border-bottom:4px solid;
+    }
+
+    .sectionType1 div{
+        padding: 1%;
+    }
+
+    .portafolio{
+        display: flex;
+        border: 10px double rgb(238, 236, 233);
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+    }
+
+    .sectionType2{
+        padding:4%;
+    }
+
+    .datosJake{
+        padding-bottom:2%;
+    }
+
+    .portafolio button{
+        border-radius: 10px;
+        width: 20%;
+        border: 1px solid;
+        background-color: rgb(255, 255, 255);
+        font-weight: 600;
+        opacity: 80%;
+    }
+
+    .portafolio .col :hover{
+        background-color: black;
+        color: azure;
+    }
+
+    .personales{
+        width: 40%;
+        padding: 2%;
+        font-weight: 700;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, #ff0022 0%, #ff0800 100%);
+        color: white;
+
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        
+    }
+
+    @keyframes example {
+        0%{left: 10%; right: inherit;}
+    }
+
+
+
+    .personales img{
+        position: absolute;
+        width: 40%;
+        left: 50%;
+        top: 138%;
+        padding: 4%;
+        border-radius:70px;
+    }
+
+    .estadistticas{
+        position: absolute;
+        top: 183%;
+        left: 44%;
+        height: 10%;
+        color: black;
+    }
+
+    .estadistticas div{
+        margin: 6%;
+    }
+
+    .info{
+        padding-top: 5%;
+        filter: drop-shadow(1px 1px 1px black);
+    }
+    .info p{
+        color: rgb(221, 18, 18);
+        font-weight: 800;
+    }
+
+    .info h4{
+        color: rgb(219, 46, 46);
+        font-weight: 900;
+    }
+
+    .cv{
+        position: absolute;
+        top: 220%;
+        left: 17%;
+    }
+
+    .cv button{
+        width: 300%;
+        background-image: radial-gradient(circle 860px at 11.8% 33.5%, rgba(240, 30, 92, 1) 0%,rgba(244, 49, 74, 1) 30.5%,rgba(249, 75, 37, 1) 56.1%,rgba(250, 88, 19, 1) 75.6%,rgba(253, 102, 2, 1) 100.2%);
+        color: azure;
+        font-weight: 700;
+    }
+
+
+    .masInfo{
+        display: flex;
+    }
+
+    .especificaciones{
+        padding-left: 3%;        
+    }
+
+    .proyectos{
+        position: absolute;
+        left: 43%;
+    }
 }
 
 @media (max-width: 767.98px) {
-    
+
+    .datosJake{
+        display: grid;
+    }
 }
